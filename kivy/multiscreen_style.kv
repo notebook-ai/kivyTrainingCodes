@@ -1,0 +1,23 @@
+Manager:
+	Main:
+	Second:
+
+
+
+<Main>:
+	name:"main"
+	BoxLayout:
+		Label:
+			text:"HamRuyesh.Com"
+		Button:
+			text:"Go to Second"
+			on_release: root.manager.current="second"
+
+<Second>:
+	name:"second"
+	BoxLayout:
+		Label:
+			text:"Second Screen"
+		Button:
+			text:"Back to Main"
+			on_release: root.manager.current="main"

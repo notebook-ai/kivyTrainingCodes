@@ -1,0 +1,14 @@
+
+python -m pip install --upgrade pip wheel setuptools virtualenv
+
+virtualenv venv
+cd venv\scprits
+activate
+
+python -m pip install kivy
+python -m pip install kivymd
+
+
+# for run kivy files in terminal mode
+
+python sayHello.py

@@ -1,0 +1,55 @@
+Manager:
+	mgr: sc_mgr
+	Main:
+		id: sc_mgr
+	About:
+
+<MyPaintWidget>:
+	on_touch_down: self.on_touch_down
+	on_touch_move: self.on_touch_move
+
+<Main>:
+	name: "main"
+	draw: main_draw
+	BoxLayout:
+		orientation: "vertical"
+
+		MyPaintWidget:
+			id: main_draw
+			size_hint: 1, 0.9
+
+		GridLayout:
+			size_hint: 1, 0.1
+			cols: 3
+			padding: 10
+
+			Button:
+				text: "About"
+				on_press:
+					root.manager.current= "about"
+					root.manager.transition.direction= "left"
+			Label:
+			
+			Button:
+				text: "Clear"
+				on_release: app.root.cleaner()
+
+
+
+
+<About>:
+	name: "about"
+	BoxLayout:
+		orientation: "vertical"
+		padding: 10
+
+		Label:
+			size_hint: 1, 0.9
+			text: "This is a free and open source paint app, made by a teacher of HamRuyesh community."
+
+		Button:
+			size_hint: 1, 0.9
+			text:"Back to Main"
+			on_press:
+				root.manager.current= "main"
+				root.manager.transition.direction= "right"
