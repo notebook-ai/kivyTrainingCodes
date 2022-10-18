@@ -1,0 +1,7 @@
+('D:\\projects\\kivyTrainingCodes\\kvenv\\share\\glew\\bin',
+ None,
+ [],
+ 'DATA',
+ [('glew32.dll',
+   'D:\\projects\\kivyTrainingCodes\\kvenv\\share\\glew\\bin\\glew32.dll',
+   'DATA')])
