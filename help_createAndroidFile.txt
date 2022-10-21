@@ -1,0 +1,22 @@
+1. install buildozer package
+	pip3 install --upgrade buildozer
+	pip3 ionstall Cython
+
+2. go to the project path and run 
+	buildozer init
+	
+3. run this command
+	buildozer android debug
+	
+----------------------------------
+
+buildozer android debug
+
+buildozer android debug deploy run
+
+buildozer android deploy run
+
+buildozer android debug deploy run logcat > mylog.txt
+
+
+alternatives --config javac 
